@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotLiquid.Contrib", "DotLiquid.Contrib\DotLiquid.Contrib.csproj", "{8883EFFD-C9D6-486B-BBA6-69E20839B60E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotLiquid.Contrib.Mustache", "DotLiquid.Contrib.Mustache\DotLiquid.Contrib.Mustache.csproj", "{05DC6172-243E-4378-9D11-7EE21A4F4EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotLiquid.Contrib.Mustache.Tests", "DotLiquid.Contrib.Mustache.Tests\DotLiquid.Contrib.Mustache.Tests.csproj", "{A953E5B3-38A9-480D-B770-4B984128202B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,14 @@ Global
 		{8883EFFD-C9D6-486B-BBA6-69E20839B60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8883EFFD-C9D6-486B-BBA6-69E20839B60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8883EFFD-C9D6-486B-BBA6-69E20839B60E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DC6172-243E-4378-9D11-7EE21A4F4EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DC6172-243E-4378-9D11-7EE21A4F4EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DC6172-243E-4378-9D11-7EE21A4F4EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DC6172-243E-4378-9D11-7EE21A4F4EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A953E5B3-38A9-480D-B770-4B984128202B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A953E5B3-38A9-480D-B770-4B984128202B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A953E5B3-38A9-480D-B770-4B984128202B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A953E5B3-38A9-480D-B770-4B984128202B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
