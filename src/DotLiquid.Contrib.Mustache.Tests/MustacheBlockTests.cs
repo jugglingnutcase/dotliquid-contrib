@@ -15,7 +15,7 @@ namespace DotLiquid.Contrib.Mustache.Tests
         {
             // Given
             Template.RegisterTag<MustacheBlock>("mustache");
-            Template template = Template.Parse("{% mustache 'data' %} {% raw %} Hi {{ name }}! {% endraw %} {% endmustache %}");
+            Template template = Template.Parse("{% mustache data %} {% raw %} Hi {{ name }}! {% endraw %} {% endmustache %}");
 
             Hash data = new Hash();
             data.Add(new KeyValuePair<string, object>("data", new { name = "Mustache" }));

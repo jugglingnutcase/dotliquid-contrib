@@ -11,8 +11,7 @@
     /// </summary>
     /// <remarks>
     /// Make sure to pass the key of the data object that the mustache template should render as markup. For example, if you want to send the template
-    /// data from the <code>Person</code> object, call the mustache block like <code>{% mustache "Person" %}</code>. Quotes are optional.
-    /// The block accepts double or single quotes, or no quotes at all.
+    /// data from the <code>person</code> object, call the mustache block like <code>{% mustache person %}</code>.
     /// </remarks>
     public class MustacheBlock : Block
     {
@@ -22,8 +21,8 @@
         {
             base.Initialize(tagName, markup, tokens);
 
-            // Ignore any quotes or whitespace in the markup
-            _modelContext = markup.Replace(@"""", @"").Replace(@"'", "").Trim();
+            // Ignore any whitespace in the markup
+            _modelContext = markup.Trim();
         }
 
         public override void Render(Context context, TextWriter result)
