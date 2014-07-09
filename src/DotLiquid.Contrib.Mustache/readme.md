@@ -23,6 +23,21 @@ you will get `Hi James!` back.
 
 The mustache block considers everything within it as a mustache template.
 
+### Optionally use liquid markup inside the mustache block
+
+If you want to render liquid markup within the `mustache` block, like an include
+for example, use `no_raw` in the mustache block's markup to prevent treating the
+markup inside the block as a mustache template:
+
+```
+{% mustache person no_raw %}
+{% include person_template %}
+{% endmustache %}
+```
+
+Remember to enclose any mustache template code in a `raw` block so it isn't
+processed as liquid markup.
+
 ## Comments
 
 You can argue that this block is unnecessary and a result of over-engineering
