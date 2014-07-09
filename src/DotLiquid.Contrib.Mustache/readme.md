@@ -26,5 +26,5 @@ The mustache block considers everything within it as a mustache template.
 ## Comments
 
 You can argue that this block is unnecessary and a result of over-engineering
-*and you'd be right*! i (james) wanted a quick way to share templates between
-client and server for a project i'm working on.
+*and you'd be right*! i (@jugglingnutcase) wanted a quick way to share templates
+between client and server for a project i'm working on.
