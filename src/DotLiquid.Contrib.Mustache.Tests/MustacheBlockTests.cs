@@ -1,5 +1,6 @@
 ﻿using DotLiquid;
-using DotLiquid.Contrib.Mustache; using System;
+using DotLiquid.Contrib.Mustache;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace DotLiquid.Contrib.Mustache.Tests
         {
             // Given
             Template.RegisterTag<MustacheBlock>("mustache");
-            Template template = Template.Parse("{% mustache data %} {% raw %} Hi {{ name }}! {% endraw %} {% endmustache %}");
+            Template template = Template.Parse("{% mustache data %}Hi {{ name }}!{% endmustache %}");
 
             Hash data = new Hash();
             data.Add(new KeyValuePair<string, object>("data", new { name = "Mustache" }));

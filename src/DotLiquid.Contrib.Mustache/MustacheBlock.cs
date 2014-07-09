@@ -19,10 +19,14 @@
 
         public override void Initialize(string tagName, string markup, List<string> tokens)
         {
-            base.Initialize(tagName, markup, tokens);
+            // Consider anything within the mustache block as if it were in a raw block
+            tokens.Insert(0, @"{% raw %}");
+            tokens.Insert(tokens.Count - 1, @"{% endraw %}");
 
             // Ignore any whitespace in the markup
             _modelContext = markup.Trim();
+
+            base.Initialize(tagName, markup, tokens);
         }
 
         public override void Render(Context context, TextWriter result)
