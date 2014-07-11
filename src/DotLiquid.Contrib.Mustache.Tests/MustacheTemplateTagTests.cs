@@ -10,26 +10,6 @@ using Xunit;
 
 namespace DotLiquid.Contrib.Mustache.Tests
 {
-    public class TestFileSystem : IFileSystem
-    {
-        string templateName;
-        string template;
-        public TestFileSystem(string templateName, string template)
-        {
-            this.templateName = templateName;
-            this.template = template;
-        }
-
-        public string ReadTemplateFile(Context context, string templateName)
-        {
-            if (this.templateName == templateName)
-            {
-                return this.template;
-            }
-            return "FAIL!";
-        }
-    }
-
     public class MustacheTemplateTagTests
     {
         [Fact]
@@ -66,6 +46,26 @@ namespace DotLiquid.Contrib.Mustache.Tests
 
             // Then
             Assert.Contains("Liquid mustache template issue", result);
+        }
+    }
+
+    public class TestFileSystem : IFileSystem
+    {
+        string templateName;
+        string template;
+        public TestFileSystem(string templateName, string template)
+        {
+            this.templateName = templateName;
+            this.template = template;
+        }
+
+        public string ReadTemplateFile(Context context, string templateName)
+        {
+            if (this.templateName == templateName)
+            {
+                return this.template;
+            }
+            return "FAIL!";
         }
     }
 }
