@@ -2,8 +2,6 @@
 {
     using DotLiquid;
     using DotLiquid.FileSystems;
-    using N = Nustache.Core;
-    using System;
     using System.Collections.Generic;
     using System.IO;
 
