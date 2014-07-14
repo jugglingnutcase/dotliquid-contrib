@@ -1,10 +1,10 @@
 ﻿namespace DotLiquid.Contrib.Mustache
 {
     using DotLiquid;
-    using N = Nustache.Core;
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using N = Nustache.Core;
 
     /// <summary>
     /// Renders a mustache template enclosed by the block using the supplied parameter as a reference the data used in rendering the template.

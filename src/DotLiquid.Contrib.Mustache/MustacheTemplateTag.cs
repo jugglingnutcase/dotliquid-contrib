@@ -2,10 +2,9 @@
 {
     using DotLiquid;
     using DotLiquid.FileSystems;
-    using N = Nustache.Core;
-    using System;
     using System.Collections.Generic;
     using System.IO;
+    using N = Nustache.Core;
 
     /// <summary>
     /// Renders mustache from a template using the passed data context
