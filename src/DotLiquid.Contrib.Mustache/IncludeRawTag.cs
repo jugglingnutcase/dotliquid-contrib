@@ -6,7 +6,7 @@
     using System.IO;
 
     /// <summary>
-    /// Includes a template, but does not Render it through liquid.
+    /// Includes a template, but does not render it through liquid.
     /// </summary>
     public class IncludeRawTag : Tag
     {
@@ -20,7 +20,6 @@
 
         public override void Render(Context context, TextWriter result)
         {
-            // Read the mustache template
             IFileSystem fileSystem = context.Registers["file_system"] as IFileSystem ?? Template.FileSystem;
             result.Write(fileSystem.ReadTemplateFile(context, this.templateName));
         }
